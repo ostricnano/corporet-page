@@ -1,10 +1,4 @@
 
-let cache = new Map();
-console.log(cache,'cache')
-
-export function fetchData () {
-  
-}
 export async function getData(){
   return await getWorksData()
 }

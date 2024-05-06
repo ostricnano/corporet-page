@@ -1,5 +1,4 @@
 //for this component we will use grid, open bootstrap, go to grid, then to fluid containar and the pagination component from bootstrap
-import { Suspense} from 'react';
 import Container from 'react-bootstrap/Container';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
@@ -22,9 +21,6 @@ for (let number = 1; number <= 5; number++) {
       {number}
     </Pagination.Item>,
   );
-}
-function Loading() {
-  return <h2 style={{backgroundColor:'black'}}>🌀 Loading...</h2>;
 }
 
 const Works: React.FC<{ data: WorksData[] }> = ({ data }) => {
